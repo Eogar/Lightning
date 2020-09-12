@@ -10,14 +10,14 @@ void setup()
 }
 void draw()
 {
-  ellipse(30,30,30,30);
-  stroke((int)(Math.random()));
-  while (startX < 300)
-    endX = startX + (int)(Math.random()*9);
-    endY = startY + (int)(Math.random()*+-9);
+  fill(123,321,553);
+  stroke((float)(Math.random()*257),(float)(Math.random()*257),(float)(Math.random()*257));  while (endX < 300) {
+    endX += (int)(Math.random()*9);
+    endY += (int)(Math.random()*18 -9);
     line(startX, startY, endX, endY);
     startX = endX;
     startY = endY;
+  }
 }
 void mousePressed()
 {
